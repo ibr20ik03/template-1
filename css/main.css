@@ -1,0 +1,494 @@
+/* Start Variables */
+
+/* End Variables */
+
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /* small */
+@media (min-width:768px){
+    .container{
+        width:750px;
+    }
+}
+    /* Medium */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+    /* Large */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+/* End Global Rules  */
+
+/* Start Components */
+
+
+/* End Components */
+
+/* Start Landing */
+.landing{
+    position: relative;
+}
+
+.landing img{
+    height: auto;
+    max-width: 100%;
+}
+
+.landing .container .box{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 30px;
+    color: #fff;
+    overflow: hidden;
+    opacity: 0.5;
+    text-align: center;
+}
+
+
+.landing .box h2{
+    padding: 0 40px 20px;
+    border-bottom: 2px solid #f6f6f663;
+}
+
+.landing .box p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.landing .box button{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.landing .box:hover{
+    opacity: 1;
+}
+
+
+.landing .take-our{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.landing .box button:hover,
+.landing .down-respon:hover,
+.landing .take-our:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.landing .down-respon{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+    .landing .down-respon{
+        display: block;
+    }
+
+    .landing .box {
+        display: none;
+    }
+
+    .landing .take-our{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .landing img{
+        margin-top: 39px;
+        margin-bottom: 13px;
+    }
+}
+/* End Landing */
+/* Start Download */
+
+
+#sec1{
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+
+
+#sec1 .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec1 .container .text-download{
+    flex-basis: 70%;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+h3.hed{
+    color: #4CAF50;
+}
+
+
+#sec1 .container .text-download p{
+    line-height: 1.6em;
+}
+.mark{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#sec1 .container .text-download .vaib i:first-child{
+    color: #4CAF50;
+    font-size: 25px;
+
+}
+
+#sec1 .container .text-download .vaib i:nth-child(2){
+    color: #000;
+    font-size: 25px;
+
+}
+
+#sec1 .container .text-download .vaib i:nth-child(3){
+    color: #2196F3;
+    font-size: 25px;
+
+}
+
+
+
+#sec1 .container .text-download button{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+#sec1 .container .text-download button:hover{
+    background-color: rgba(0, 0, 0, 0.384);
+    cursor: pointer;
+}
+
+#sec1 .container .img-app{
+    flex-basis: 25%;
+}
+
+#sec1 .container .img-app img{
+    width: 100%; 
+}
+
+@media (max-width:768px) {
+    #sec1 .container {
+        flex-direction: column;
+    } 
+
+    #sec1 .container .text-download {
+        display: grid;
+    }
+
+    #sec1 .container .text-download button {
+        order: 1;
+    }
+
+    #sec1 .container .img-app {
+        max-width: fit-content;
+        display: block;
+        margin: 10px auto 0;
+    }
+}
+
+/* End Download */
+
+/* Start Clarity */
+
+#sec2{
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    background-color: #f1f1f1;
+}
+
+#sec2 .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec2 .container .app4{
+    flex-basis: 25%;
+}
+
+#sec2 .container .app4 img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+#sec2 .container .clarity{
+    flex-basis: 70%;
+} 
+
+#sec2 .container .clarity h3{
+    padding-top: 40px;
+}
+
+#sec2 .container .clarity h3.hed{
+    color: #f00;
+    padding-top: 10px;
+}
+
+#sec2 .container .clarity p{
+    line-height: 1.8em;
+}
+
+@media (max-width:768px) {
+    #sec2 .container .app4{
+        display: none;
+    }
+
+    #sec2 .container .clarity {
+        flex: 1;
+    }
+}
+
+/* End Clarity  */
+
+/* Start Features */
+
+.features {
+    padding-top: 50px;
+    background-color: #616161;
+}
+
+.features .container {
+    text-align: center;
+    color: #fff;
+}
+
+.features .container h2 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.features .content {
+    margin-top: 50px;  
+}
+
+.features .container .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(25%,1fr));
+}
+
+.features .content .box {
+    margin-bottom: 100px;
+}
+
+.features .content .box .w3-jumbo {
+    margin-bottom: 20px;
+}
+
+@media (max-width:992px) {
+    .features .container .content{
+        grid-template-columns: repeat(auto-fill,minmax(calc(100%/3),1fr));
+    }
+}
+
+
+@media (max-width:768px) {
+    .features .container .content {
+        grid-template-columns: repeat(auto-fill,minmax(calc(100%/2),1fr));
+    }
+}
+
+/* End Features */
+
+/* Start Pricing */
+
+#pricing{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#pricing .container .main-title{
+    text-align: center;
+
+}
+
+#pricing .container .main-title h4 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+#pricing .container .plans{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#pricing .container .plans .plan{
+    flex-basis: 48%;
+}
+
+#pricing .container .plans .plan:hover{
+    box-shadow: 1px 1px 4px 4px #ddd;
+}
+
+#pricing .container .plans .plan:first-child .head{
+    padding: 20px;
+    background-color: #616161;
+    color: #fff;
+    font-size: 20px;
+}
+
+#pricing .container .plans .plan:last-child .head{
+    padding: 20px;
+    color: #fff;
+    background-color: #f00;
+    font-size: 20px;
+}
+
+
+#pricing .container .plans .plan ul li{
+   list-style: none;
+   padding: 20px 0;
+   border-bottom: 1px solid #ddd;
+   font-size: 17px;
+}
+
+#pricing .container .plans .plan ul li span{
+   font-weight: bolder;
+}
+
+#pricing .container .plans .plan ul li:last-child{
+    padding: 40px 0;
+    font-size: 30px;
+    font-weight: normal;
+    opacity: 0.60;
+ }
+
+ #pricing .container .plans .plan .foot {
+    padding: 30px 0;
+    background-color: #f1f1f1;
+ }
+
+ #pricing .container .plans .plan .foot a{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+#pricing .container .plans .plan .foot a:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+@media (max-width:992px) {
+    #pricing .container .plans {
+        flex-direction: column;
+    }
+
+    #pricing .container .plans .plan:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* End Pricing  */
+
+/* Start Footer  */
+footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+footer .container{
+    text-align: center;
+    
+}
+
+footer .container .social-media{
+    padding-bottom: 30px;
+}
+
+footer .container .social-media i{
+    margin-left: 5px;
+}
+
+footer .container .social-media i:hover{
+    opacity: 0.6;
+}
+
+footer .container a{
+    color: #000;
+}
+
+footer .container a:hover{
+    color: #4CAF50;
+}
+/* End Footer  */
+
+
